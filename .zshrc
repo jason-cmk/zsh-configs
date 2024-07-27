@@ -18,6 +18,10 @@ fi
 # Compilation flags
 export ARCHFLAGS="-arch x86_64"
 
+# Edit line with ctrl-e
+autoload edit-command-line; zle -N edit-command-line
+bindkey '^e' edit-command-line
+
 # My plugins
 source $ZDOTDIR/plugins/bat.sh
 source $ZDOTDIR/plugins/bun.sh
