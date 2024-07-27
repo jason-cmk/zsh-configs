@@ -28,3 +28,4 @@ source $ZDOTDIR/plugins/bun.sh
 source $ZDOTDIR/plugins/eza.sh
 source $ZDOTDIR/plugins/fzf.sh
 source $ZDOTDIR/plugins/wsl-clipboard-fix.sh
+source $ZDOTDIR/plugins/zoxide.sh
