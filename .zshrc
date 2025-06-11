@@ -22,6 +22,9 @@ export ARCHFLAGS="-arch x86_64"
 autoload edit-command-line; zle -N edit-command-line
 bindkey '^e' edit-command-line
 
+# Xero dev setup
+alias xdev='zsh ~/xdev.sh'
+
 # My plugins
 source $ZDOTDIR/plugins/bat.sh
 source $ZDOTDIR/plugins/bun.sh
