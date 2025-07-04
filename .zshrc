@@ -26,10 +26,10 @@ bindkey '^e' edit-command-line
 alias xdev='zsh ~/xdev.sh'
 
 # My plugins
-source $ZDOTDIR/plugins/bat.sh
-source $ZDOTDIR/plugins/bun.sh
-source $ZDOTDIR/plugins/eza.sh
-source $ZDOTDIR/plugins/fzf.sh
-source $ZDOTDIR/plugins/wsl-clipboard-fix.sh
-source $ZDOTDIR/plugins/zoxide.sh
-source $ZDOTDIR/plugins/gafz.sh
+source $ZDOTDIR_JASON/plugins/bat.sh
+source $ZDOTDIR_JASON/plugins/bun.sh
+source $ZDOTDIR_JASON/plugins/eza.sh
+source $ZDOTDIR_JASON/plugins/fzf.sh
+source $ZDOTDIR_JASON/plugins/wsl-clipboard-fix.sh
+source $ZDOTDIR_JASON/plugins/zoxide.sh
+source $ZDOTDIR_JASON/plugins/gafz.sh

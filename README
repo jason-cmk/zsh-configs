@@ -1,0 +1,3 @@
+# Include in ~/.zshrc
+export ZDOTDIR_JASON="$HOME/.config/zshrc"
+source $ZDOTDIR_JASON/.zshrc
