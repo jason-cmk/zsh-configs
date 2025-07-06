@@ -26,6 +26,7 @@ bindkey '^e' edit-command-line
 alias xdev='zsh ~/xdev.sh'
 
 # My plugins
+source $ZDOTDIR_JASON/plugins/zsh-autocomplete.sh
 source $ZDOTDIR_JASON/plugins/bat.sh
 source $ZDOTDIR_JASON/plugins/bun.sh
 source $ZDOTDIR_JASON/plugins/eza.sh
