@@ -1,4 +1,4 @@
 # ---- Eza (better ls) -----
-alias ls="eza -a --icons=always --colour=always --level 1"
+export EZA_CONFIG_DIR="${EZA_CONFIG_DIR:-$HOME/.config/eza}"
 
-export LS_COLORS="$(vivid generate catppuccin-mocha)"
+alias ls="eza -a --icons=always --colour=always --level 1"

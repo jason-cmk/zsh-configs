@@ -1,4 +1,4 @@
-export BAT_THEME=Nord
+export BAT_THEME="Catppuccin Latte"
 
 # ---- bat (better cat) -----
 alias cat="bat"
