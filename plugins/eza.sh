@@ -1,4 +1,11 @@
 # ---- Eza (better ls) -----
-export EZA_CONFIG_DIR="${EZA_CONFIG_DIR:-$HOME/.config/eza}"
+# eza only reads $EZA_CONFIG_DIR/theme.yml, so we point it at one of the
+# per-mode directories (light = catppuccin latte by default, dark = catppuccin
+# mocha by default). Drop a different palette into either dir to swap themes.
+if [[ "${LIGHT_SWITCH:l}" == "off" ]]; then
+  export EZA_CONFIG_DIR="$HOME/.config/eza/dark"
+else
+  export EZA_CONFIG_DIR="$HOME/.config/eza/light"
+fi
 
 alias ls="eza -a --icons=always --colour=always --level 1"
