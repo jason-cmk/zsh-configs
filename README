@@ -4,23 +4,23 @@ source $ZDOTDIR_JASON/.zshrc
 
 # Light/dark theme switching
 # ----------------------------------------------------------------------------
-# bat, eza, nvim, and tmux all read the LIGHT_SWITCH env var and pick between
+# bat, delta, eza, nvim, and tmux all read the LIGHT_SWITCH env var and pick between
 # the light_theme and dark_theme declared in their own configs. Allowed values:
-#   on   -> light theme (default if unset)
-#   off  -> dark theme
+#   1  -> light theme (default if unset)
+#   0  -> dark theme
 #
 # The default is exported from ~/.zprofile so it is also inherited by GUI
 # launched apps (wezterm, tmux server, etc.). To switch themes, override the
 # var before launching a new shell. Examples:
 #
 #   # Single command in dark mode:
-#   LIGHT_SWITCH=off nvim
+#   LIGHT_SWITCH=0 nvim
 #
 #   # New shell session in dark mode:
-#   LIGHT_SWITCH=off zsh
+#   LIGHT_SWITCH=0 zsh
 #
 #   # Persistent flip for new login shells:
-#   #   edit ~/.zprofile, set LIGHT_SWITCH=off, then re-login
+#   #   edit ~/.zprofile, set LIGHT_SWITCH=0, then re-login
 #
 # After changing the var, restart tmux/nvim to pick up the new theme; bat
 # and eza pick it up automatically on the next shell.
@@ -31,6 +31,7 @@ source $ZDOTDIR_JASON/.zshrc
 # theme system entirely (e.g. dracula, gruvbox). To swap one out:
 #
 #   bat   -> edit zsh/plugins/bat.sh and change DARK_THEME
+#   delta -> edit [delta "mocha"] block in ~/.gitconfig
 #   eza   -> replace ~/.config/eza/dark/theme.yml with a new palette
 #   nvim  -> edit ~/.config/nvim/lua/jasoncmk/theme.lua dark = ... block
 #   tmux  -> edit the dark branch in ~/.config/tmux/tmux.conf

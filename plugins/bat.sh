@@ -6,7 +6,7 @@ alias cat="bat"
 local LIGHT_THEME="Catppuccin Latte"
 local DARK_THEME="Catppuccin Mocha"
 
-if [[ "${LIGHT_SWITCH:l}" == "off" ]]; then
+if [[ "$LIGHT_SWITCH" == "0" ]]; then
   export BAT_THEME="$DARK_THEME"
 else
   export BAT_THEME="$LIGHT_THEME"

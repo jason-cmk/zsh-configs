@@ -12,5 +12,11 @@ fi
 if [[ -z "$_zsh_autocomplete_plugin" ]]; then
   _zsh_autocomplete_plugin=/usr/share/zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 fi
+
+# Debounce live autocomplete + enable completion cache (helps slow completers like git)
+zstyle ':autocomplete:*' min-delay 0.3
+zstyle ':completion:*' use-cache true
+zstyle ':completion:*' cache-path ~/.zcompcache
+
 source "$_zsh_autocomplete_plugin"
 unset _zsh_autocomplete_plugin
