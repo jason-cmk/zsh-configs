@@ -1,6 +1,2 @@
-# bun completions
-[ -s "/home/jason/.bun/_bun" ] && source "/home/jason/.bun/_bun"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
+# bun setup is handled in ~/.zshrc (completions + PATH).
+# Kept as a no-op so the sourcing line in .config/zsh/.zshrc still works.
